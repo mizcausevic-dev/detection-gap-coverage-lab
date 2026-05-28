@@ -1,0 +1,29 @@
+{
+  "surfaces": [
+    {
+      "id": "surf-core-xdr",
+      "platform": "XDR core",
+      "scope": "Global SecOps control plane",
+      "status": "HEALTHY",
+      "domains": ["IDENTITY", "ENDPOINT", "NETWORK", "CLOUD", "SAAS"],
+      "owner": "Security Platform",
+      "automationEnabled": true
+    }
+  ],
+  "gaps": [
+    {
+      "id": "dg-clean-001",
+      "category": "Identity",
+      "title": "Privileged access anomaly replay closed with owner confirmation",
+      "scope": "Global SecOps control plane",
+      "severity": "low",
+      "status": "RESOLVED",
+      "controlKind": "Rule",
+      "asset": "Privileged access anomaly replay",
+      "domain": "IDENTITY",
+      "createdAt": "2026-05-20T12:00:00Z",
+      "updatedAt": "2026-05-20T14:00:00Z",
+      "owner": "Identity Detection Engineering"
+    }
+  ]
+}

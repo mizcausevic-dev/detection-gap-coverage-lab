@@ -1,0 +1,109 @@
+{
+  "surfaces": [
+    {
+      "id": "surf-core-xdr",
+      "platform": "XDR core",
+      "scope": "Global SecOps control plane",
+      "status": "HEALTHY",
+      "domains": ["IDENTITY", "ENDPOINT", "NETWORK", "CLOUD"],
+      "owner": "Security Platform",
+      "automationEnabled": true
+    },
+    {
+      "id": "surf-emea-collab",
+      "platform": "Collaboration telemetry",
+      "scope": "EMEA workforce collaboration",
+      "status": "DEGRADED",
+      "domains": ["IDENTITY", "EMAIL", "SAAS"],
+      "owner": "Detection Engineering",
+      "automationEnabled": false
+    }
+  ],
+  "gaps": [
+    {
+      "id": "dg-001",
+      "category": "Identity",
+      "title": "Privileged access anomaly coverage is missing an approved containment owner",
+      "scope": "Global SecOps control plane",
+      "severity": "high",
+      "status": "ACTIVE",
+      "controlKind": "Rule",
+      "asset": "Privileged access analytics",
+      "principal": "global-admins@kineticgain.com",
+      "domain": "IDENTITY",
+      "createdAt": "2026-05-26T09:10:00Z",
+      "updatedAt": "2026-05-26T10:35:00Z",
+      "owner": "Identity Detection Engineering"
+    },
+    {
+      "id": "dg-002",
+      "category": "Endpoint",
+      "title": "Server telemetry connector drift on finance reporting nodes",
+      "scope": "Global SecOps control plane",
+      "severity": "medium",
+      "status": "ACTIVE",
+      "controlKind": "Connector",
+      "asset": "Endpoint telemetry connector",
+      "domain": "ENDPOINT",
+      "createdAt": "2026-05-25T20:15:00Z",
+      "updatedAt": "2026-05-25T21:00:00Z",
+      "owner": "Security Platform"
+    },
+    {
+      "id": "dg-003",
+      "category": "SaaS",
+      "title": "Collaboration audit connector is not ingesting enough detection events",
+      "scope": "EMEA workforce collaboration",
+      "severity": "medium",
+      "status": "ACTIVE",
+      "controlKind": "Connector",
+      "asset": "Collaboration audit connector",
+      "domain": "SAAS",
+      "createdAt": "2026-05-24T22:00:00Z",
+      "updatedAt": "2026-05-24T22:40:00Z",
+      "owner": "Detection Engineering"
+    },
+    {
+      "id": "dg-004",
+      "category": "Automation",
+      "title": "Incident playbook is incomplete for high-confidence phishing detections",
+      "scope": "EMEA workforce collaboration",
+      "severity": "high",
+      "status": "ACTIVE",
+      "controlKind": "Playbook",
+      "asset": "Phishing incident playbook",
+      "domain": "EMAIL",
+      "createdAt": "2026-05-24T08:30:00Z",
+      "updatedAt": "2026-05-24T09:15:00Z",
+      "owner": "Incident Automation"
+    },
+    {
+      "id": "dg-005",
+      "category": "Cloud",
+      "title": "Cloud correlation queue remains active without verified closure",
+      "scope": "Global SecOps control plane",
+      "severity": "high",
+      "status": "ACTIVE",
+      "controlKind": "Incident",
+      "asset": "Cloud correlation incident queue",
+      "domain": "CLOUD",
+      "createdAt": "2026-05-23T12:00:00Z",
+      "updatedAt": "2026-05-23T12:20:00Z"
+    },
+    {
+      "id": "dg-006",
+      "category": "Identity",
+      "title": "Legacy guest anomaly replay reviewed and closed",
+      "scope": "EMEA workforce collaboration",
+      "severity": "low",
+      "status": "RESOLVED",
+      "controlKind": "Rule",
+      "asset": "Guest access anomaly",
+      "principal": "legacy-guest#EXT#@kineticgain.onmicrosoft.com",
+      "domain": "IDENTITY",
+      "createdAt": "2026-05-20T12:00:00Z",
+      "updatedAt": "2026-05-21T08:00:00Z",
+      "owner": "Identity Detection Engineering"
+    }
+  ]
+}
