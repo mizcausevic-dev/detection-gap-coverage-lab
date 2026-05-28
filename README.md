@@ -118,3 +118,7 @@ Open:
 - [**`aws-guardduty-triage-board`**](https://github.com/mizcausevic-dev/aws-guardduty-triage-board) — AWS finding triage posture
 
 Together they form a broader recruiter-facing security lane: exposure, telemetry coverage, incident automation, and detection engineering proof.
+
+## Part of the Kinetic Gain Suite
+
+Operator surface in the [Kinetic Gain Suite](https://suite.kineticgain.com/) — a portfolio of buyer-readable control planes spanning security posture, compliance evidence, data-platform governance, FinOps, and operator workflows. See the suite index for related surfaces. Apex: [kineticgain.com](https://kineticgain.com/).
